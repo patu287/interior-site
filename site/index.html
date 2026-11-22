@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en" data-type="service">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>Maison Arc — Interior Architecture &amp; Objects</title>
+<meta name="description" content="Maison Arc composes calm, light-led rooms and the furniture that lives in them. Interior architecture studio, Pune Bengaluru Milan." />
+<meta name="theme-color" content="#17130e" />
+<meta name="page-type" content="service" />
+<meta name="site-kind" content="other" />
+<meta property="og:title" content="Maison Arc — Interior Architecture &amp; Objects" />
+<meta property="og:description" content="A small studio composing calm, light-led rooms, and the objects that live in them." />
+<meta property="og:type" content="website" />
+<link rel="preload" href="assets/fonts/fraunces-latin-300-normal.woff2" as="font" type="font/woff2" crossorigin />
+<link rel="preload" href="assets/fonts/fraunces-latin-400-italic.woff2" as="font" type="font/woff2" crossorigin />
+<link rel="preload" href="assets/fonts/archivo-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin />
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+<link rel="stylesheet" href="styles.css?v=3.2" />
+</head>
+<body class="is-loading">
+
+<a class="skip" href="#top">Skip to content</a>
+
+<div class="grain" aria-hidden="true"></div>
+<div class="cursor" aria-hidden="true"><div class="cursor__ring"></div><div class="cursor__dot"></div></div>
+
+<!-- loader -->
+<div class="loader" id="loader">
+  <div class="loader__inner">
+    <div class="loader__mark">MAISON&nbsp;ARC</div>
+    <div class="loader__meta">
+      <span class="loader__label">Composing the room</span>
+      <span class="loader__pct" id="loaderPct">00</span>
+    </div>
+    <div class="loader__bar"><i id="loaderBar"></i></div>
+  </div>
+</div>
+
+<!-- nav -->
+<header class="nav" id="nav">
+  <a class="nav__logo" href="#top" data-cursor="link">
+    <span class="nav__logo-arc" aria-hidden="true"></span>
+    MAISON&nbsp;ARC
+  </a>
+  <nav class="nav__links">
+    <a href="#work" data-cursor="link"><span>Work</span></a>
+    <a href="#objects" data-cursor="link"><span>Objects</span></a>
+    <a href="#studio" data-cursor="link"><span>Studio</span></a>
+    <a href="#process" data-cursor="link"><span>Process</span></a>
+    <a href="#journal" data-cursor="link"><span>Journal</span></a>
+  </nav>
+  <div class="nav__right">
+    <button class="sound" id="soundBtn" aria-pressed="false" aria-label="Toggle ambient sound" data-cursor="link">
+      <span class="sound__bars" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+      <span class="sound__txt">Sound</span>
+    </button>
+    <a class="nav__cta" href="#contact" data-cursor="link">Enquire<span aria-hidden="true">↗</span></a>
+    <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="menu">
+      <span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- overlay menu -->
+<div class="menu" id="menu" aria-hidden="true">
+  <div class="menu__bg"></div>
+  <div class="menu__inner">
+    <p class="menu__eyebrow">Index</p>
+    <nav class="menu__list">
+      <a href="#top" class="menu__item"><em>01</em><span>The Room</span></a>
+      <a href="#work" class="menu__item"><em>02</em><span>Selected Work</span></a>
+      <a href="#objects" class="menu__item"><em>03</em><span>The Object Library</span></a>
+      <a href="#studio" class="menu__item"><em>04</em><span>Studio</span></a>
+      <a href="#process" class="menu__item"><em>05</em><span>Process</span></a>
+      <a href="#journal" class="menu__item"><em>06</em><span>Journal</span></a>
+      <a href="#contact" class="menu__item"><em>07</em><span>Enquire</span></a>
+    </nav>
+    <div class="menu__foot">
+      <a href="mailto:hello@maisonarc.studio">hello@maisonarc.studio</a>
+      <div class="menu__socials">
+        <a href="#" data-cursor="link">Instagram</a>
+        <a href="#" data-cursor="link">Pinterest</a>
+        <a href="#" data-cursor="link">Are.na</a>
+      </div>
+      <p class="menu__place">Pune · Bengaluru · Milan</p>
+    </div>
+  </div>
+</div>
+
+<main id="top">
+
+  <!-- ══════════ HERO SCRUB ══════════ -->
+  <section class="hero" id="hero">
+    <div class="hero__pin">
+      <div class="hero__stage" id="heroStage">
+        <canvas id="heroCanvas" aria-label="An empty plaster room gradually furnishing itself as you scroll"></canvas>
+        <div class="hero__vignette" aria-hidden="true"></div>
+        <div class="hero__scrim" id="heroScrim" aria-hidden="true"></div>
+      </div>
+
+      <div class="hero__ui">
+        <div class="hero__top">
+          <p class="hero__eyebrow">Interior Architecture · Objects · Est. 2014</p>
+          <p class="hero__year">Pune · Bengaluru · Milan</p>
+        </div>
+
+        <div class="hero__beats" id="heroBeats">
+          <div class="beat" data-beat="0">
+            <p class="beat__num">i.</p>
+            <h1 class="beat__title">We begin with<br>an <em>empty room.</em></h1>
+            <p class="beat__sub">Bare plaster. One arched window. The room breathes before anything is placed inside it.</p>
+          </div>
+          <div class="beat" data-beat="1">
+            <p class="beat__num">ii.</p>
+            <h2 class="beat__title">Then we <em>listen</em><br>to it.</h2>
+            <p class="beat__sub">Proportion, shadow, the path of the north light. Every decision is drawn from the room itself.</p>
+          </div>
+          <div class="beat" data-beat="2">
+            <h2 class="beat__title">And we furnish<br>the <em>silence.</em></h2>
+            <p class="beat__sub">Bouclé, travertine, oak underfoot. A rust rug that holds the afternoon. Calm, made deliberate.</p>
+          </div>
+        </div>
+
+        <div class="hero__meta" aria-hidden="true">
+          <span class="hero__counter">Frame <b id="heroPct">000</b> · 191</span>
+          <span class="hero__cue" id="heroCue">Scroll — the room assembles</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════ MARQUEE ══════════ -->
+  <div class="marquee" aria-hidden="true" data-speed="0.10">
+    <div class="marquee__track">
+      <span>Interior Architecture</span><i>✦</i><span>Bespoke Furniture</span><i>✦</i><span>Material &amp; Light</span><i>✦</i><span>Art Curation</span><i>✦</i>
+      <span>Interior Architecture</span><i>✦</i><span>Bespoke Furniture</span><i>✦</i><span>Material &amp; Light</span><i>✦</i><span>Art Curation</span><i>✦</i>
+    </div>
+  </div>
+
+  <!-- ══════════ MANIFESTO ══════════ -->
+  <section class="manifesto" id="studio">
+    <img class="sticker sticker--palm" src="assets/cut/plant-palm.webp" alt="" aria-hidden="true" />
+    <span class="manifesto__ghost" aria-hidden="true">01</span>
+    <div class="wrap">
+      <p class="label reveal"><span>01 · The Studio</span></p>
+      <h2 class="manifesto__type" data-words>
+        A room is never decorated. It is <em>composed</em> — proportion first, light second, objects last.
+      </h2>
+
+      <div class="manifesto__band" data-speed="0.14">
+        <figure class="shot shot--band reveal">
+          <img src="assets/rooms/about.jpg" alt="The Maison Arc studio table with material samples" loading="lazy" />
+        </figure>
+        <div class="manifesto__grid">
+          <p class="reveal">Maison Arc is a small studio of architects and material people. We take on a handful of homes each year, never more than six, so that every arch, joint and shadow gets the attention it asks for.</p>
+          <p class="reveal">We work in limewash, oak, travertine and clay: surfaces that age with the people living on them. Nothing shouts. Everything holds.</p>
+        </div>
+      </div>
+
+      <ul class="stats" data-speed="0.07">
+        <li class="reveal"><b data-count="11">0</b><span>Years of practice</span></li>
+        <li class="reveal"><b data-count="48">0</b><span>Spaces composed</span></li>
+        <li class="reveal"><b data-count="6">0</b><span>Projects a year</span></li>
+        <li class="reveal"><b data-count="3">0</b><span>Cities, three countries</span></li>
+      </ul>
+
+      <p class="texture__note reveal">Beige ground, green turf — the studio reads land the way it reads light.</p>
+    </div>
+  </section>
+
+  <!-- ══════════ WORK ══════════ -->
+  <section class="work" id="work">
+    <img class="sticker sticker--arc" src="assets/cut/arclamp.webp" alt="" aria-hidden="true" />
+    <header class="work__head wrap">
+      <p class="label reveal"><span>02 · Selected Work</span></p>
+      <h2 class="work__title reveal">Four rooms,<br><em>four silences.</em></h2>
+      <p class="work__intro reveal">Each project begins with a demolition drawing and ends with a rug. Drag sideways through the archive — every room was photographed on the day we left it.</p>
+    </header>
+
+    <div class="rail" id="rail">
+      <div class="rail__track">
+        <article class="card" data-cursor="link">
+          <div class="card__media"><img src="assets/rooms/room-1.jpg" alt="Nilaya House living room with arched window" loading="lazy" /></div>
+          <div class="card__body">
+            <p class="card__idx">01 / 2025</p>
+            <h3>Nilaya House</h3>
+            <p class="card__meta">Pune · 1,850 sq ft</p>
+            <p class="card__text">An apartment re-drawn around a single arched opening. Three walls removed, one arch kept.</p>
+          </div>
+        </article>
+        <article class="card" data-cursor="link">
+          <div class="card__media"><img src="assets/rooms/room-2.jpg" alt="Casa Vetro bedroom in clay and bone tones" loading="lazy" /></div>
+          <div class="card__body">
+            <p class="card__idx">02 / 2024</p>
+            <h3>Casa Vetro</h3>
+            <p class="card__meta">Milan · 940 sq ft</p>
+            <p class="card__text">A rented flat that could not be touched — so we built a curved plaster room inside it.</p>
+          </div>
+        </article>
+        <article class="card" data-cursor="link">
+          <div class="card__media"><img src="assets/rooms/room-3.jpg" alt="Ochre Apartment bathroom niche" loading="lazy" /></div>
+          <div class="card__body">
+            <p class="card__idx">03 / 2024</p>
+            <h3>The Ochre Apartment</h3>
+            <p class="card__meta">Bengaluru · 620 sq ft</p>
+            <p class="card__text">One long bench of stone, handles removed, lines closed. A bathroom that behaves like a wall.</p>
+          </div>
+        </article>
+        <article class="card card--flat" data-cursor="link">
+          <div class="card__media"><img src="frames/f119.webp" alt="Atelier Nord interior at dusk" loading="lazy" /></div>
+          <div class="card__body">
+            <p class="card__idx">04 / 2023</p>
+            <h3>Atelier Nord</h3>
+            <p class="card__meta">Copenhagen · 1,100 sq ft</p>
+            <p class="card__text">Shelving as architecture. One niche for the things worth keeping, lit from within.</p>
+          </div>
+        </article>
+      </div>
+      <div class="rail__ui wrap">
+        <div class="rail__bar"><i id="railBar"></i></div>
+        <p class="rail__hint">Drag, scroll or use the arrows — <span id="railPos">01 / 04</span></p>
+        <div class="rail__arrows">
+          <button id="railPrev" aria-label="Previous project" data-cursor="link">←</button>
+          <button id="railNext" aria-label="Next project" data-cursor="link">→</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="wrap">
+      <p class="texture__note reveal">Four rooms, four silences — each one read as a field before it was drawn.</p>
+    </div>
+  </section>
+
+  <!-- ══════════ OBJECT LIBRARY (retro stickers) ══════════ -->
+  <section class="objects" id="objects">
+    <div class="objects__glow" aria-hidden="true"></div>
+    <div class="wrap">
+      <header class="objects__head">
+        <p class="label label--light reveal"><span>03 · The Object Library</span></p>
+        <h2 class="objects__title">
+          <span class="line"><span>Pieces we would</span></span>
+          <span class="line"><span><em>put in your room.</em></span></span>
+        </h2>
+        <p class="objects__intro reveal">A living index of the furniture, lighting and greenery we specify again and again. Hover a piece to pull it forward.</p>
+      </header>
+
+      <div class="obj-grid" id="objGrid">
+        <figure class="obj" data-cursor="view"><b class="obj__no">No. 01</b><img src="assets/cut/plant-rubber.webp" alt="Rubber fig in a fluted oak planter" loading="lazy" /><figcaption><b>Fig in Fluted Oak</b><span>Greenery · planter &amp; planting</span></figcaption></figure>
+        <figure class="obj" data-cursor="view"><b class="obj__no">No. 02</b><img src="assets/cut/sectional.webp" alt="Olive velvet curved sectional sofa" loading="lazy" /><figcaption><b>Rondo Sectional</b><span>Seating · olive velvet</span></figcaption></figure>
+        <figure class="obj" data-cursor="view"><b class="obj__no">No. 03</b><img src="assets/cut/chair.webp" alt="Sculptural olive velvet lounge chair" loading="lazy" /><figcaption><b>Cocoon Chair</b><span>Seating · velvet, walnut base</span></figcaption></figure>
+        <figure class="obj" data-cursor="view"><b class="obj__no">No. 04</b><img src="assets/cut/pendants.webp" alt="Three ceramic cloud pendant lights" loading="lazy" /><figcaption><b>Cloud Suspension</b><span>Lighting · hand-formed ceramic</span></figcaption></figure>
+        <figure class="obj" data-cursor="view"><b class="obj__no">No. 05</b><img src="assets/cut/sofa-drift.webp" alt="Tufted green velvet sofa on a driftwood base" loading="lazy" /><figcaption><b>Drift Sofa</b><span>Seating · velvet on found wood</span></figcaption></figure>
+        <figure class="obj" data-cursor="view"><b class="obj__no">No. 06</b><img src="assets/cut/bookshelf.webp" alt="Open oak grid bookshelf with books and objects" loading="lazy" /><figcaption><b>Grid Shelving</b><span>Storage · oiled oak</span></figcaption></figure>
+        <figure class="obj" data-cursor="view"><b class="obj__no">No. 07</b><img src="assets/cut/console.webp" alt="Low walnut console with drawer" loading="lazy" /><figcaption><b>Low Console</b><span>Storage · solid walnut</span></figcaption></figure>
+        <figure class="obj" data-cursor="view"><b class="obj__no">No. 08</b><img src="assets/cut/arclamp.webp" alt="Bronze arc floor lamp with perforated shade" loading="lazy" /><figcaption><b>Arc No. 3</b><span>Lighting · bronze, marble base</span></figcaption></figure>
+        <figure class="obj" data-cursor="view"><b class="obj__no">No. 09</b><img src="assets/cut/plant-palm.webp" alt="Lady palm in a white pot on a wooden stand" loading="lazy" /><figcaption><b>Lady Palm</b><span>Greenery · oak tripod stand</span></figcaption></figure>
+        <figure class="obj" data-cursor="view"><b class="obj__no">No. 10</b><img src="assets/cut/beanbag.webp" alt="Black suede bean bag" loading="lazy" /><figcaption><b>Slouch Bag</b><span>Seating · faux suede</span></figcaption></figure>
+        <figure class="obj" data-cursor="view"><b class="obj__no">No. 11</b><img src="assets/cut/sofa-set.webp" alt="Mid-century lounge set with armchairs and sofa" loading="lazy" /><figcaption><b>Trio Lounge Set</b><span>Seating · walnut &amp; linen</span></figcaption></figure>
+        <figure class="obj" data-cursor="view"><b class="obj__no">No. 12</b><img src="assets/cut/cabinet.webp" alt="Oak sideboard with slatted doors and dark ceramics" loading="lazy" /><figcaption><b>Slat Sideboard</b><span>Storage · oak, blackened steel</span></figcaption></figure>
+        <figure class="obj" data-cursor="view"><b class="obj__no">No. 13</b><img src="assets/cut/sofa-leather.webp" alt="Dark brown leather sofa on walnut plinth" loading="lazy" /><figcaption><b>Plinth Sofa</b><span>Seating · aniline leather</span></figcaption></figure>
+        <figure class="obj" data-cursor="view"><b class="obj__no">No. 14</b><img src="assets/cut/bed.webp" alt="Linen bed dressed in clay and cream" loading="lazy" /><figcaption><b>Bed No. 2</b><span>Sleeping · washed linen</span></figcaption></figure>
+      </div>
+
+      <p class="objects__foot reveal">Every piece is sourced, not sponsored. Ask us for the maker list — <a href="#contact" data-cursor="link">request the lookbook</a>.</p>
+    </div>
+  </section>
+
+  <!-- ══════════ APPROACH ══════════ -->
+  <section class="approach" id="approach">
+    <div class="wrap approach__grid">
+      <div class="approach__left">
+        <p class="label reveal"><span>04 · Approach</span></p>
+        <h2 class="approach__title reveal">What we<br><em>actually do.</em></h2>
+        <figure class="shot shot--arch reveal">
+          <img src="frames/f040.webp" alt="Empty plaster room mid-transformation" loading="lazy" />
+        </figure>
+        <p class="approach__caption reveal">Frame 41 — the room, mid-sentence.</p>
+        <p class="approach__note reveal">The grid, kept honest — measured once, cut never twice.</p>
+      </div>
+
+      <ol class="services">
+        <li class="service" data-open="1">
+          <div class="service__head">
+            <span class="service__num">01</span>
+            <h3>Interior Architecture</h3>
+            <span class="service__plus" aria-hidden="true"></span>
+          </div>
+          <div class="service__panel"><p>Walls moved, arches drawn, joinery built into the structure. We work from drawings and site, never from a mood board alone.</p></div>
+        </li>
+        <li class="service">
+          <div class="service__head">
+            <span class="service__num">02</span>
+            <h3>Material &amp; Light Study</h3>
+            <span class="service__plus" aria-hidden="true"></span>
+          </div>
+          <div class="service__panel"><p>Before a single piece is specified, we model the light. Where it lands at 9 a.m., and where it dies at 6, decides the plan.</p></div>
+        </li>
+        <li class="service">
+          <div class="service__head">
+            <span class="service__num">03</span>
+            <h3>Bespoke Furniture</h3>
+            <span class="service__plus" aria-hidden="true"></span>
+          </div>
+          <div class="service__panel"><p>Benches, shelves, headboards and handles drawn for one room only, made with four workshops we have used for a decade.</p></div>
+        </li>
+        <li class="service">
+          <div class="service__head">
+            <span class="service__num">04</span>
+            <h3>Art &amp; Object Curation</h3>
+            <span class="service__plus" aria-hidden="true"></span>
+          </div>
+          <div class="service__panel"><p>Fewer things, better placed. We source ceramics, textiles and works on paper from studios we visit ourselves.</p></div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ══════════ PROCESS ══════════ -->
+  <section class="process" id="process">
+    <div class="wrap">
+      <p class="label label--light reveal"><span>05 · Process</span></p>
+      <div class="process__grid">
+        <div class="process__sticky">
+          <p class="process__kicker">Four steps,<br>twelve to twenty weeks.</p>
+          <div class="process__bar"><i id="processBar"></i></div>
+          <p class="process__note">No retainer before step two. No drawings before we have stood in the room.</p>
+        </div>
+        <ol class="steps">
+          <li class="step"><span>01</span><h3>Listen</h3><p>Two hours in your home, no drawings. We photograph the light at three different hours and record how you actually use the rooms, not how you mean to.</p></li>
+          <li class="step"><span>02</span><h3>Draw</h3><p>A plan, an axonometric, a palette of twelve materials on your own floor. One round of revisions, free. The second is where the money is.</p></li>
+          <li class="step"><span>03</span><h3>Compose</h3><p>Site supervision, joinery shop visits, and a running list of everything we rejected. We show up on the dusty days, not just the pretty ones.</p></li>
+          <li class="step"><span>04</span><h3>Leave</h3><p>We style the rooms, photograph them, then step out. A good interior should still work when the designer stops visiting.</p></li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════ QUOTE ══════════ -->
+  <section class="quote">
+    <div class="wrap">
+      <p class="quote__mark" aria-hidden="true">“</p>
+      <p class="quote__note reveal">Strata — earth, plaster and turf beneath every finish.</p>
+      <blockquote class="reveal">
+        They didn't fill our house. They gave it a <em>pulse</em> — and then they left us alone with it.
+      </blockquote>
+      <p class="quote__by reveal">Ananya &amp; Rugved M. — Nilaya House, Pune</p>
+    </div>
+  </section>
+
+  <!-- ══════════ JOURNAL ══════════ -->
+  <section class="journal" id="journal">
+    <img class="sticker sticker--bed" src="assets/cut/bed.webp" alt="" aria-hidden="true" />
+    <div class="wrap">
+      <div class="journal__head">
+        <p class="label reveal"><span>06 · Journal</span></p>
+        <h2 class="journal__title reveal">Notes from<br><em>the site.</em></h2>
+      </div>
+      <p class="texture__note reveal">Notes from the site — what the land remembers.</p>
+      <div class="journal__grid">
+        <a class="post reveal" href="#contact" data-cursor="link">
+          <figure class="shot shot--post"><img src="assets/rooms/room-1.jpg" alt="Arched window with morning light" loading="lazy" /></figure>
+          <p class="post__date">14 Nov 2026 · Material</p>
+          <h3>Why we stopped painting walls white</h3>
+          <p class="post__text">Limewash moves. It holds the hour of the day in its surface, and it forgives a house that gets lived in.</p>
+          <span class="post__more">Read the note</span>
+        </a>
+        <a class="post reveal" href="#contact" data-cursor="link">
+          <figure class="shot shot--post shot--arch"><img src="assets/rooms/room-3.jpg" alt="Plaster niche with ceramics" loading="lazy" /></figure>
+          <p class="post__date">02 Oct 2026 · Detail</p>
+          <h3>The niche is the cheapest architecture</h3>
+          <p class="post__text">Four hundred millimetres of depth costs less than a shelf and gives the room a place to keep its silence.</p>
+          <span class="post__more">Read the note</span>
+        </a>
+        <a class="post reveal" href="#contact" data-cursor="link">
+          <figure class="shot shot--post"><img src="assets/rooms/room-2.jpg" alt="Bedroom in clay tones" loading="lazy" /></figure>
+          <p class="post__date">19 Sep 2026 · Objects</p>
+          <h3>Six objects, one room, nothing else</h3>
+          <p class="post__text">What we leave out is the design. A list of the pieces that survived our most ruthless edit.</p>
+          <span class="post__more">Read the note</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════ CTA / FOOTER ══════════ -->
+  <footer class="footer" id="contact">
+    <div class="footer__glow" aria-hidden="true"></div>
+
+    <div class="wrap footer__cta">
+      <p class="label label--light reveal"><span>07 · Enquire</span></p>
+      <h2 class="footer__title">
+        <span class="line"><span>Your room</span></span>
+        <span class="line"><span><em>is waiting.</em></span></span>
+      </h2>
+      <div class="footer__mid">
+        <p class="reveal">We take on six projects a year. If the timing fits, we will call within two days and visit within two weeks.</p>
+        <a class="footer__mail" href="mailto:hello@maisonarc.studio" data-cursor="link">hello@maisonarc.studio</a>
+      </div>
+    </div>
+
+    <!-- floating objects strip -->
+    <div class="footer__objects" aria-hidden="true" data-speed="0.12">
+      <img src="assets/cut/plant-rubber.webp" alt="" class="fo fo--1" loading="lazy" />
+      <img src="assets/cut/chair.webp" alt="" class="fo fo--2" loading="lazy" />
+      <img src="assets/cut/pendants.webp" alt="" class="fo fo--3" loading="lazy" />
+      <img src="assets/cut/arclamp.webp" alt="" class="fo fo--4" loading="lazy" />
+      <img src="assets/cut/plant-palm.webp" alt="" class="fo fo--5" loading="lazy" />
+    </div>
+
+    <div class="wrap">
+      <div class="footer__grid">
+        <div>
+          <h4>Studio</h4>
+          <p>12 A, Lane 7, Koregaon Park<br>Pune 411001, India</p>
+          <p>Via Solferino 22<br>20121 Milano, IT</p>
+        </div>
+        <div>
+          <h4>Elsewhere</h4>
+          <p><a href="#" data-cursor="link">Instagram</a><br><a href="#" data-cursor="link">Pinterest</a><br><a href="#" data-cursor="link">Are.na</a></p>
+        </div>
+        <div>
+          <h4>Local time</h4>
+          <p id="clock">—</p>
+        </div>
+        <div>
+          <h4>Newsletter</h4>
+          <form class="sub" onsubmit="return false;">
+            <input type="email" placeholder="you@email.com" aria-label="Email address" />
+            <button type="submit" aria-label="Subscribe" data-cursor="link">→</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <span>© 2026 Maison Arc Studio</span>
+        <span>Built frame by frame · <b>v3.2</b></span>
+        <span>22 Nov 2026</span>
+        <a class="footer__download" href="downloads/maison-arc-site-v3.2.zip" download="maison-arc-site-v3.2.zip" data-cursor="link">Download the site ↓</a>
+        <a href="#top" data-cursor="link">Back to the room ↑</a>
+      </div>
+    </div>
+  </footer>
+</main>
+
+<script src="app.js?v=3.2"></script>
+</body>
+</html>
